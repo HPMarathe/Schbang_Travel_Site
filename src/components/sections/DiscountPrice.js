@@ -4,19 +4,19 @@ import bannergirl from "./../../../public/bannergirl.png";
 
 const DiscountPrice = () => {
   return (
-    <div className="w-[1277px] h-[700px] flex mt-28">
+    <div className="w-[1277px] md:h-[700px] flex flex-col md:flex-row mt-28 overflow-hidden m-auto">
       {/* left */}
       <div>
-        <Image src={bannergirl} alt="" />
+        <Image className="w-screen" src={bannergirl} alt="" />
       </div>
-      <div className="bg-blue-300 w-[445px] h-[667px] pl-2 gap-6 ">
+      <div className="bg-blue-300 flex flex-col justify-center max-w-md md:w-[445px]  pl-2 gap-6 ">
         {/* Top */}
-        <div className="h-1/2 bg-gray-300 flex flex-col px-8 gap-8">
+        <div className=" bg-gray-300 flex flex-col px-8 gap-8">
           <span className="text-[#F85E9F] text-xl uppercase ">
             Travel Point
           </span>
           <span className="font-semibold text-4xl">
-            We helping you find your dream location
+            We helping you find <br /> your dream location
           </span>
           <p>
             Contrary to popular belief, Lorem Ipsum is not simply random text.

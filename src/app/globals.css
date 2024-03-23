@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap'); */
 
+body {
+  background-color: #fbf4f4;
+  /* background-image: linear-gradient(to bottom , #b69e9e, white);  */
+  /* Set your desired background color */
+  /* You can add more global styles here */
+}
  /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

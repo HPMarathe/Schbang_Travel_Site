@@ -9,9 +9,10 @@ import rect3 from "./../../../public/Rectangle 3.png";
 
 const Hero = () => {
   return (
-    <div className="w-[1199px] h-[713px] mt-32  mx-auto  ">
-      <div className="flex items-center  ">
-        <div className="w-[427px] h-[548px] bg-slate-600 relative">
+    <div className="max-w-[1199px] h-[full] m-10 md:mt-28  mx-auto overflow-hidden">
+      <div className="  md:flex md:flex-row md:items-center  gap-20 flex flex-col items-center">
+        {/* Left */}
+        <div className="w-[427px] h-[548px] bg-slate-100 relative">
           <div className="flex flex-col">
             <button className="bg-red-100 w-fit flex py-3 px-10 rounded-full text-center gap-2">
               <span className="text-[#F85E9F]  h-[17px]">
@@ -19,7 +20,7 @@ const Hero = () => {
               </span>
               <Image src={explore} alt="explore.png" />
             </button>
-            <h1 className="w-full  text-6xl  font-semibold  bg-blue-300 my-8 leading-snug">
+            <h1 className="w-full  text-6xl  font-semibold  bg-blue-100 my-8 leading-snug">
               Travel top <br />
               destination <br />
               of the world
@@ -40,19 +41,19 @@ const Hero = () => {
           </div>
         </div>
         {/* right */}
-        <div className="w-[772px] h-[713px] relative  ">
+        <div className="w-screen  md:w-[772px] h-[713px]  relative ">
           <div className="absolute">
             {" "}
             <Image src={backgroundimg} className="" />
           </div>
-          <div className=" absolute top-16 left-28 flex items-center gap-5">
+          <div className=" absolute top-28 left-32  md:left-16 md:top-24 flex items-center gap-5">
             {/* left */}
-            <div className="flex flex-col gap-4">
-              <Image className="" src={rect1} />
-              <Image className="" src={rect2} />
+            <div className="flex flex-col gap-4 w-48 md:w-full">
+              <Image src={rect1} />
+              <Image src={rect2} />
             </div>
             {/* right */}
-            <div>
+            <div className=" w-48 md:w-full">
               <Image src={rect3} />
             </div>
           </div>

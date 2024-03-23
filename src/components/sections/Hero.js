@@ -2,6 +2,10 @@ import Image from "next/image";
 import React from "react";
 import explore from "./../../../public/explore.png";
 import demo from "./../../../public/demo.png";
+import backgroundimg from "./../../../public/backgroundimg.png";
+import rect1 from "./../../../public/Rectangle 1.png";
+import rect2 from "./../../../public/Rectangle 2.png";
+import rect3 from "./../../../public/Rectangle 3.png";
 
 const Hero = () => {
   return (
@@ -35,8 +39,24 @@ const Hero = () => {
             </button>
           </div>
         </div>
-
-        <div className="w-[772px] h-[713px] bg-blue-500">right</div>
+        {/* right */}
+        <div className="w-[772px] h-[713px] relative  ">
+          <div className="absolute">
+            {" "}
+            <Image src={backgroundimg} className="" />
+          </div>
+          <div className=" absolute top-16 left-28 flex items-center gap-5">
+            {/* left */}
+            <div className="flex flex-col gap-4">
+              <Image className="" src={rect1} />
+              <Image className="" src={rect2} />
+            </div>
+            {/* right */}
+            <div>
+              <Image src={rect3} />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

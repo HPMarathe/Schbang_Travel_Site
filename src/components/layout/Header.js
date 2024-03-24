@@ -5,27 +5,27 @@ import Image from "next/image";
 const Header = () => {
   return (
     <div className="flex mx-auto items-center text-center max-w-[1440px] h-[113px] justify-around overflow-hidden">
-      <div className="flex justify-between w-[145px] h-[40px]">
+      <div className="flex justify-between w-20 sm:w-[145px] h-[40px]">
         <Image
-          className="w-8 h-8 md:w-[40px] md:h-[40px]"
+          className="w-5 h-5 sm:w-8 sm:h-8 md:w-[40px] md:h-[40px] my-auto"
           src={logo}
           alt="logo"
         />
-        <div className="w-[89px] h-[40px] flex text-sm items-center justify-between ">
+        <div className="w-[89px] h-[40px] flex font-bold text-sm sm:text-xl md:text-2xl items-center justify-between ">
           Travlog
         </div>
       </div>
-      <ul className="flex gap-3 justify-around items-center bg-white  md:max-w-[427px] text-black">
-        <li className="cursor-pointer text-sm">Home</li>
-        <li className="cursor-pointer text-sm">Discover</li>
-        <li className="cursor-pointer text-sm">Special Deals</li>
-        <li className="cursor-pointer text-sm">Contact</li>
+      <ul className="flex gap-1 md:gap-3 justify-around items-center bg-white  md:max-w-[427px] text-black">
+        <li className="cursor-pointer text-xs sm:text-sm ">Home</li>
+        <li className="cursor-pointer text-xs sm:text-sm">Discover</li>
+        <li className="cursor-pointer text-xs sm:text-sm">Special Deals</li>
+        <li className="cursor-pointer text-xs sm:text-sm">Contact</li>
       </ul>
       <div className="flex justify-between">
-        <button className="w-16 p-1 m-1 max-w-[116px] h-[49px] text-sm">
+        <button className="w-9 sm:w-14 mx-2 max-w-[116px] h-[49px] text-xs sm:text-sm  md:text-lg">
           Log In
         </button>
-        <button className="md:w-[116px] min-w-20 text-sm h-[49px] bg-[#5D50C6]  rounded-full ">
+        <button className="md:w-[116px] w-14   text-xs  sm:text-sm  md:text-lg bg-[#5D50C6] text-white rounded-lg m-1 md:rounded-full ">
           Sign Up
         </button>
       </div>

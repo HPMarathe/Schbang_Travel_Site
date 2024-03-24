@@ -3,7 +3,7 @@ import React from "react";
 import email from "./../../../public/email.png";
 const NewsLetter = () => {
   return (
-    <div className="w-screen md:w-[1110px] px-5 sm:px-20 flex flex-col gap-16 mt-16 justify-center items-center m-auto h-[608px] bg-[#FACD4914] overflow-hidden">
+    <div className="w-screen md:w-[1110px] px-5 sm:px-20 flex flex-col gap-16 mt-16 justify-center items-center m-auto h-[608px] bg-[#FACD4914] border border-gray-300 overflow-hidden">
       <div className="flex flex-col text-center gap-16 ">
         <span className="text-[#F85E9F] text-xl md:text-2xl  uppercase">
           subscribe to our newsletter
@@ -21,7 +21,7 @@ const NewsLetter = () => {
             placeholder="Your Email"
           />
         </div>
-        <button className="bg-[#5D50C6]  md:w-2/12 text-sm md:text-xl p-3  rounded-xl text-white">
+        <button className="bg-[#5D50C6]  md:w-2/12 text-sm md:text-xl p-3  rounded-xl text-white hover:bg-blue-400  hover:scale-105">
           Subscribe
         </button>
       </div>

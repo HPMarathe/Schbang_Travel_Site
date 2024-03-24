@@ -9,6 +9,12 @@ body {
   /* Set your desired background color */
   /* You can add more global styles here */
 }
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
  /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

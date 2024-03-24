@@ -4,11 +4,10 @@ import Footer from "@/components/sections/Footer";
 import Hero from "@/components/sections/Hero";
 import NewsLetter from "@/components/sections/NewsLetter";
 import Services from "@/components/sections/Services";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <div className=" ">
       <Hero />
       <Bar />
       <Services />

@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <div className="flex mx-auto items-center text-center max-w-[1440px] h-[113px] justify-around overflow-hidden">
       <div className="flex justify-between w-20 sm:w-[145px] h-[40px] cursor-pointer">
-        {/* <Image
+        <Image
           className="w-5 h-5 sm:w-8 sm:h-8 md:w-[40px] md:h-[40px] my-auto"
           src={logo}
           alt="logo"
-        /> */}
-        <div className="w-[89px] h-[40px] flex font-bold text-sm sm:text-xl md:text-2xl items-center justify-between ">
+        />
+        <div className="w-auto h-[40px] flex font-bold text-sm sm:text-xl md:text-2xl items-center justify-between text-nowrap">
           Khalid Travels And Trade links 
         </div>
       </div>

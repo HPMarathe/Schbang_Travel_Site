@@ -1,21 +1,24 @@
 import React from "react";
-import logo from "./../../../public/logo.png";
+import logo from "./../../../public/logo.jpeg";
 import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="flex mx-auto items-center text-center max-w-[1440px] h-[113px] justify-around overflow-hidden">
-      <div className="flex justify-between w-20 sm:w-[145px] h-[40px] cursor-pointer">
+    <div className="flex-col w-full lg:flex lg:flex-row mx-auto items-center text-center max-w-[1440px] justify-around overflow-hidden">
+        <div className="w-full flex justify-center items-center lg:block lg:w-1/3 mt-5 lg:mt-0">
+        <div className="lg:w-full w-2/3 flex items-center justify-center">
         <Image
-          className="w-5 h-5 sm:w-8 sm:h-8 md:w-[40px] md:h-[40px] my-auto"
+          className=""
           src={logo}
           alt="logo"
+          width={400}
+          layout="responsive"
         />
-        <div className="w-auto h-[40px] flex font-bold text-sm sm:text-xl md:text-2xl items-center justify-between text-nowrap">
-          Khalid Travels And Trade links 
         </div>
-      </div>
-      <ul className="flex gap-1 md:gap-3 justify-around items-center  md:max-w-[427px] text-black">
+        </div>
+      {/* <div className="flex justify-center w-full m-4 lg:m-0 lg:w-20 sm:w-[145px] cursor-pointer">
+      </div> */}
+      <ul className="flex gap-1 md:gap-3 justify-around items-center md:max-w-[427px] text-black my-10 lg:m-0">
         <li className="text-xs rounded-md cursor-pointer sm:text-sm md:text-lg hover:bg-red-100">
           Home
         </li>
@@ -25,15 +28,15 @@ const Header = () => {
         <li className="text-xs rounded-md cursor-pointer sm:text-sm md:text-lg hover:bg-red-100">
           Special Deals
         </li>
-        <li className="text-xs rounded-md cursor-pointer sm:text-sm md:text-lg hover:bg-red-100 ">
+        <li className="text-xs rounded-md cursor-pointer sm:text-sm md:text-lg hover:bg-red-100">
           Contact
         </li>
       </ul>
       {/* <div className="flex justify-between">
-        <button className="w-9 sm:w-14 mx-2 rounded-3xl max-w-[116px] h-[49px] text-xs sm:text-sm  md:text-lg  hover:scale-105 hover:bg-red-100">
+        <button className="w-9 sm:w-14 mx-2 rounded-3xl max-w-[116px] h-[49px] text-xs sm:text-sm md:text-lg hover:scale-105 hover:bg-red-100">
           Log In
         </button>
-        <button className="md:w-[116px] w-14   text-xs  sm:text-sm  md:text-lg bg-[#5D50C6] text-white rounded-lg m-1 md:rounded-full hover:bg-blue-400 y-4  hover:scale-105">
+        <button className="md:w-[116px] w-14 text-xs sm:text-sm md:text-lg bg-[#5D50C6] text-white rounded-lg m-1 md:rounded-full hover:bg-blue-400 y-4 hover:scale-105">
           Sign Up
         </button>
       </div> */}

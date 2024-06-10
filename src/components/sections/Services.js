@@ -6,7 +6,7 @@ import easybooking from "./../../../public/easybooking.png";
 const Services = () => {
   return (
     <div className="flex flex-col sm:flex-row w-screen md:w-[1199px]  mt-12 mx-auto gap-5 overflow-hidden ">
-      <div className="flex flex-col w-[444px] h-[444px] bg-white justify-center m-auto gap-4 rounded-3xl  px-8 hover:scale-105 hover:bg-red-100">
+      <div className="flex flex-col w-[444px] h-[444px] bg-white justify-center m-auto gap-4 rounded-3xl  px-8 hover:scale-95 hover:bg-red-100 hover:rounded-3xl">
         <span className="uppercase text-[#F85E9F]">Services</span>
         <span className="text-4xl font-semibold">
           Our top value <br /> categories for you
